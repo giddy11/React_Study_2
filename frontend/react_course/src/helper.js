@@ -6,11 +6,7 @@ let users = [
     }
 ];
 
-export function signup() {
-    let fullname = document.getElementById("fullname").value;
-    let email = document.getElementById("email").value;
-    let password = document.getElementById("password").value;
-    let result1 = document.getElementById("result1");
+export function signup(fullname, email, password) {
 
     let user = users.find(item => item.email == email);
     if(user == null){
@@ -23,9 +19,9 @@ export function signup() {
             password:password
         });
         console.log(users)
-        result1.innerText = "Sign up Successfully"
+        alert("Sign up Successfully")
     } else {
-        result1.innerText = "User Already Exists"
+        alert("User Already Exists")
     }
 
 }
