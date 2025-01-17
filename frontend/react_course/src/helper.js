@@ -19,20 +19,22 @@ export function signup(fullname, email, password) {
             email: email,
             password:password
         });
-        console.log(user)
-        console.log(users)
+
         alert("Sign up Successfully")
     } else {
         alert("User Already Exists")
     }
+
+    console.log("user in signup: ", user)
+    console.log("users in signup: ", users)
 
 }
 
 export function login(email2, password2) {
 
     let user = users.find(item => item.email === email2 && item.password === password2);
-    console.log(user)
-    console.log(users)
+    console.log("user in login: ", user)
+        console.log("users in login: ", users)
     if(user == null){
         alert("Invalid User Authentication")
     } else {

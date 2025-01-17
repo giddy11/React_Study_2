@@ -17,7 +17,7 @@ export const Login = () => {
         <input type="password" id="password2" placeholder="password" vlaue = {password2} onChange={(e) => setPassword2(e.target.value)}/>
         <br/>
 
-        <button onClick={login}>Login</button>
+        <button onClick={() => login(email2, password2)}>Login</button>
         <br/>
         <p id="result2">-------Result-------</p>
     </div>
