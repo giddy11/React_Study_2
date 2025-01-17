@@ -11,3 +11,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.holder {
+  background-color: #37517E;
+  width: 100%;
+}
+
+.holder header {
+  width: 85%;
+  margin: 0 auto;
+  background-color: #37517E;
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  color: #fff;
+}
+
+.holder header .logo p {
+  font-size: 200%;
+  font-weight: 600;
+}
+
+.holder header .nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.holder header .nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.6em;
+  font-size: 90%;
+}
+
+.holder header .nav button {
+  background-color: #44A3D5;
+  color: #fff;
+  padding: 0.2rem 1.4rem;
+  border-style: none;
+  border-radius: 1.5rem;
+}

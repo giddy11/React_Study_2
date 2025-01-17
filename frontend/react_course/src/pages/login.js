@@ -4,6 +4,7 @@ import { login } from '../helper';
 export const Login = () => {
   const [email2, setEmail2] = useState("");
   const [password2, setPassword2] = useState("");
+  
 
   return (
     <div style={{backgroundColor: "blue", color: "white", padding: "10px"}}>
@@ -16,6 +17,8 @@ export const Login = () => {
         <br/>
         <input type="password" id="password2" placeholder="password" vlaue = {password2} onChange={(e) => setPassword2(e.target.value)}/>
         <br/>
+
+        {/* /signup */}
 
         <button onClick={() => login(email2, password2)}>Login</button>
         <br/>

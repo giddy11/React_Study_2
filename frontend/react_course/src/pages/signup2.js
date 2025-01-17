@@ -29,6 +29,8 @@ function Signup2() {
         <input type="password" id="password" placeholder="password" name='password' value={signupDetails.password} onChange={updateChangesHandler}/>
         <br/>
 
+        {/* /login */}
+
         <button onClick={() => signup(signupDetails.fullname, signupDetails.email, signupDetails.password)}>Sign up</button>
         <br/>
         <p >-------Result-------</p>
