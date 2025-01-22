@@ -54,3 +54,8 @@ code {
   border-style: none;
   border-radius: 1.5rem;
 }
+
+.home-container {
+  background-color: aliceblue;
+  display: flex;
+}

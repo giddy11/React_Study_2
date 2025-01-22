@@ -5,8 +5,11 @@ export default function Page_1() {
 
     const navigate = useNavigate()
 
+    const profile_name = "Emmanuel"
+    const path = `/home2/${profile_name}`
+
     const naviagatePage = () => {
-        navigate("/")
+        navigate(path)
     }
   return (
     <div>
@@ -16,7 +19,8 @@ export default function Page_1() {
             <Link to={"/page2"}>Go to page 2</Link>
         </button>
 
-        <button onClick={() => navigate("/")}>Log in</button>
+        {/* <button onClick={() => navigate("/")}>Log in</button> */}
+        <button onClick={naviagatePage}>Log in</button>
     </div>
   )
 }

@@ -10,6 +10,11 @@ import Page_1 from './pages/page_1';
 import Page_2 from './pages/page_2';
 import Page_3 from './pages/page_3';
 import Header from './components/header';
+import Home2 from './pages/home2';
+import Jumia_homepage from './pages/jumia_homepage';
+import App1 from './week_7/app1';
+import Search_posts from './week_7/search_posts';
+import SearchPosts from './week_7/search_posts';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -23,6 +28,10 @@ root.render(
         <Route path="/page1" element={<Page_1/>}></Route>
         <Route path="/page2" element={<Page_2/>}></Route>
         <Route path="/page3" element={<Page_3/>}></Route>
+        <Route path="/app1" element={<App1/>}></Route>
+        <Route path="/search-posts" element={<SearchPosts/>}></Route>
+        <Route path='/home2/:profile_name' element={<Home2/>}></Route>
+        <Route path="/jumia-home" element={<Jumia_homepage/>}></Route>
       </Routes>
     </BrowserRouter>
 
