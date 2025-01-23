@@ -6,7 +6,7 @@ export const EmailContext = createContext() //the first step
 
 export default function Component5(props) {
     const user = useContext(UserContext)
-    const email = useState("emma@gmail.com");
+    const [email, setEmail] = useState("emma@gmail.com");
     
 
   return (
