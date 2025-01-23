@@ -1,15 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import Component1 from './component1'
 import Component6 from './component6'
 
+export const EmailContext = createContext() //the first step
+
+
 
 export default function App3() {
+    const [email, setEmail] = useState("emma@gmail.com");
 
 
     return (
         <div>
-            <Component1/>
+            {/* <Component1/> */}
             {/* <Component6/> */}
+            <EmailContext.Provider value={email}>
+                <Component1/>
+            </EmailContext.Provider>
         </div>
     )
 }
