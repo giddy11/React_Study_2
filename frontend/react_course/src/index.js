@@ -15,6 +15,8 @@ import Jumia_homepage from './pages/jumia_homepage';
 import App1 from './week_7/app1';
 import Search_posts from './week_7/search_posts';
 import SearchPosts from './week_7/search_posts';
+import App2 from './week_7/useEffects/app2';
+import App3 from './week_7/useContext/app3';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,6 +31,8 @@ root.render(
         <Route path="/page2" element={<Page_2/>}></Route>
         <Route path="/page3" element={<Page_3/>}></Route>
         <Route path="/app1" element={<App1/>}></Route>
+        <Route path="/app2" element={<App2/>}></Route>
+        <Route path="/app3" element={<App3/>}></Route>
         <Route path="/search-posts" element={<SearchPosts/>}></Route>
         <Route path='/home2/:profile_name' element={<Home2/>}></Route>
         <Route path="/jumia-home" element={<Jumia_homepage/>}></Route>

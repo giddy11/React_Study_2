@@ -23,7 +23,7 @@ export default function SearchPosts() {
         const filtered = allPosts.filter(post => post.title.toLowerCase().includes(keyword.trim().toLowerCase()))
         setFilteredPosts(filtered)
     }
-  }, [keyword])
+  }, [keyword, allPosts])
 
   console.log(keyword);
 
